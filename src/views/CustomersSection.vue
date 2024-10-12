@@ -20,12 +20,17 @@ const reviews = [
 
 <template>
   <section>
-    <h2>
-      From The People Who Use Rise
-    </h2>
-    <p>
-      Our mission at Risevest is to empower more people just like you to achieve your personal financial goals.
-    </p>
+    <div class="center info">
+      <h2>
+        From The People Who Use Rise
+      </h2>
+      <p>
+        span.line
+        Our mission at Risevest is to empower more people just like you
+        to achieve your personal financial goals.
+      </p>
+
+    </div>
 
     <Vue3Marquee :pauseOnHover="true" :duration="60">
       <div id="reviewCard" v-for="review in reviews" :key="review">
@@ -43,6 +48,13 @@ const reviews = [
 </template>
 
 <style scoped>
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.info {}
+
 #reviewCard {
   border-radius: 10px;
   border: 1px solid #ECFEFE;

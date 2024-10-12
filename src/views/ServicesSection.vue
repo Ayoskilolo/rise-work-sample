@@ -51,7 +51,7 @@ import CallToAction from '../components/CallToAction.vue';
 
   <section class="reverse">
     <div>
-      <h3>We remember so you dont have to</h3>
+      <h3>We remember so you don't have to</h3>
       <p>
         <span class="line-break-block">Our Auto-invest feature makes it easy to stay consistent,</span>
         <span class="line-break-block">even when you forget. Set a funding amount, frequency</span>

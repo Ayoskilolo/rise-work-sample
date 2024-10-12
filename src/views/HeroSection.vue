@@ -34,9 +34,7 @@ import { Icon } from '@iconify/vue';
             </div>
 
             <div class="appPreview">
-
             </div>
-            <!-- <img src="/appPreview.png" alt="" class="appPreview"> -->
         </div>
 
         <div id="heroPartners">
@@ -60,8 +58,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 2;
-    padding: 2rem;
+    flex: 1;
+    padding: 1.5rem;
 }
 
 h2 {

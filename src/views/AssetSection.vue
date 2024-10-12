@@ -35,7 +35,7 @@ function createCallToActionMessage(assetClass: string) {
 
 <template>
   <section>
-    <div style="text-align: center; margin-bottom:3rem;">
+    <div style="text-align: center; margin-bottom:4rem;">
       <h2>Asset Classes</h2>
       <p>It’s your money, choose where you invest it</p>
     </div>
@@ -46,13 +46,13 @@ function createCallToActionMessage(assetClass: string) {
         <div :class="assetClass.class"></div>
         <img :src="assetClass.imageURL" class="circleBase" />
 
-        <div class="center">
+        <div class="center info">
           <h3>{{ assetClass.title }}</h3>
-          <p style="text-align: center;"> {{ assetClass.message }}</p>
+          <p style="text-align: center; margin-bottom: 0.5rem;"> {{ assetClass.message }}</p>
           <p> <span class="subtitle">Historical returns:</span> {{ recordOfClasses.historicalReturns }}</p>
           <p> <span class="subtitle">Risk Level:</span> {{ recordOfClasses.riskLevel }}</p>
-          <CallToAction :message="createCallToActionMessage(assetClass.title)" />
         </div>
+        <CallToAction :message="createCallToActionMessage(assetClass.title)" class="callToAction" />
 
       </div>
     </div>
@@ -62,17 +62,20 @@ function createCallToActionMessage(assetClass: string) {
 <style scoped>
 section {
   height: max-content;
+  margin: 0;
+  padding: 3rem;
 }
 
 #assetClassesCards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 2rem;
 }
 
 p {
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 h2 {
@@ -88,7 +91,11 @@ h3 {
 #assetClassesCard {
   padding: 0;
   height: auto;
-  width: 25%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1.5px solid #919FB533;
   border-radius: 5px;
   text-align: center;
@@ -96,16 +103,19 @@ h3 {
 
 .stocks {
   background-color: #FFF4F0;
+  width: 100%;
   height: 150px;
 }
 
 .realEstate {
   background-color: #F6F2FF;
+  width: 100%;
   height: 150px;
 }
 
 .fixedIncome {
   background-color: #ECFEFE;
+  width: 100%;
   height: 150px;
 }
 
@@ -121,5 +131,14 @@ h3 {
 
 .subtitle {
   color: #4A5050;
+}
+
+.info {
+  padding: 0.5rem;
+}
+
+.callToAction {
+  padding: 1rem;
+  margin-top: auto;
 }
 </style>
