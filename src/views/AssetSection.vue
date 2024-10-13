@@ -82,10 +82,14 @@ h2 {
   margin: 0;
   padding: 0;
   font-size: 40px;
+  font-family: Tomato Grotesk;
+  font-weight: normal;
 }
 
 h3 {
   font-size: 25px;
+  font-family: Tomato Grotesk;
+  font-weight: normal;
 }
 
 #assetClassesCard {

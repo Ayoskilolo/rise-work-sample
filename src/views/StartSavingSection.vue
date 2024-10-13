@@ -27,6 +27,12 @@ section {
   padding: 3rem;
 }
 
+h5,
+h2 {
+  font-family: Tomato Grotesk;
+  font-weight: normal;
+}
+
 .startSavingText {
   display: flex;
   flex-direction: column;

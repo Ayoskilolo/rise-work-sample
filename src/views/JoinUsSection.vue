@@ -13,20 +13,20 @@ import { Icon } from '@iconify/vue';
         </h2>
         <p>Dollar investments that help you grow.</p>
         <div class="buttons">
-          <div class="button">
+          <a class="button" href="https://click.risevest.com/gb0g/84fr8qjl?af_qr=c">
             <Icon icon="ic:baseline-apple" style="font-size: 45px;" />
             <span>
               <span class="line-break-block">Download on the </span>
               <span class="bold">App Store</span>
             </span>
-          </div>
-          <div class="button">
+          </a>
+          <a class="button" href="https://click.risevest.com/gb0g/84fr8qjl?af_qr=c">
             <Icon icon="mage:playstore" style="font-size: 40px;" />
             <span>
               <span class="line-break-block">Download on the</span>
               <span class="bold line-break-block">Play Store</span>
             </span>
-          </div>
+          </a>
         </div>
       </div>
 
@@ -46,6 +46,8 @@ section {
 h2 {
   padding: 0;
   margin: 0;
+  font-family: Tomato Grotesk;
+  font-weight: normal;
 }
 
 #greenBackground {

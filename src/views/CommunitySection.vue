@@ -24,6 +24,8 @@
 <style scoped>
 h2 {
   font-size: 40px;
+  font-family: Tomato Grotesk;
+  font-weight: normal;
 }
 
 #community {

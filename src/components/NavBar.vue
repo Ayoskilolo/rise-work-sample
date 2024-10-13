@@ -5,7 +5,7 @@ import { Icon } from '@iconify/vue';
 <template>
   <header>
     <div>
-      Rise
+      <img src="/logo.svg">
     </div>
 
     <div class="nav">
@@ -21,7 +21,7 @@ import { Icon } from '@iconify/vue';
     </div>
 
     <div class="nav-mobile">
-      NAV
+      <Icon icon="ci:hamburger-lg" style="font-size: 25px;" />
     </div>
   </header>
 </template>
@@ -34,6 +34,7 @@ header {
   color: #07969E;
   font-weight: 200;
   padding: 2rem;
+  font-family: Tomato Grotesk;
 }
 
 .arrow {
@@ -47,7 +48,7 @@ header {
 }
 
 .nav-mobile {
-  display: hidden;
+  display: none;
 }
 
 @media (max-width: 1024px) {

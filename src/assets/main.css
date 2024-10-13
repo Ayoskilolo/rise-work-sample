@@ -1,17 +1,48 @@
 @import './base.css';
 
 @font-face {
-  font-family: 'Tomato Grotesk';
-  src: url('CircularXXWeb-Book.woff2') format('woff2');
+  font-family: 'Circular';
+  src: url('./CircularXXWeb-Book.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('./fonts//TomatoGrotesk-SemiBold.1183d758.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('./fonts/TomatoGrotesk-Bold.74a33382') format('opentype');
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('./fonts/TomatoGrotesk-Light.528f79fd.otf') format('opentype');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('./fonts/TomatoGrotesk-Medium.8b894f94.otf') format('opentype');
+  font-weight: light;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('./fonts/TomatoGrotesk-Regular.63ff49eb.otf') format('opentype');
+  font-weight: bold;
 }
 
 #app {
   height: inherit;
   width: 100%;
   font-weight: normal;
-  font-family: 'Tomato Grotesk';
+  font-family: Circular;
 }
 
 section {
@@ -26,6 +57,11 @@ h2 {
 
 p {
   font-size: 20px;
+}
+
+a {
+  color: rgb(45, 45, 45);
+  text-decoration: none;
 }
 
 .center {

@@ -11,3 +11,10 @@ defineProps<{
     <Icon icon="material-symbols-light:arrow-right-alt-rounded" style="font-size: 25px;" />
   </a>
 </template>
+
+<style scoped>
+a {
+  font-family: Tomato Grotesk;
+  font-weight: normal;
+}
+</style>

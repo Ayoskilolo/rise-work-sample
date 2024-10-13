@@ -3,17 +3,20 @@ const reviews = [
   {
     name: 'Lade',
     review: 'I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.',
-    icon: '',
+    icon: '/girl.jpeg',
+    style: "background-image: url('/girl.jpeg')"
   },
   {
     name: 'Jesse',
     review: 'I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.',
-    icon: '',
+    icon: '/boy.jpeg',
+    style: "background-image: url('/boy.jpeg')"
   },
   {
     name: 'Raye',
     review: 'I chose Rise because of its leadership, wealth of knowledge and the people who support them. I invest with Rise in order to protect my savings and investment from being depleted by devaluation and inflation that’s at an all-time high in Nigeria.',
-    icon: '',
+    icon: '/boy.jpeg',
+    style: "background-image: url('/boy.jpeg')"
   },
 ]
 </script>
@@ -36,9 +39,11 @@ const reviews = [
           {{ review.review }}
         </p>
 
-        <div>
-          <img :src="review.icon" alt="">
+        <div style="display: flex; align-items: center; gap:1rem">
+          <div :style="review.style" class="customerPhoto"></div>
+          <!-- <img :src="review.icon" alt="" class="customerPhoto" /> -->
           <p>{{ review.name }}</p>
+
         </div>
       </div>
     </Vue3Marquee>
@@ -52,10 +57,12 @@ section {
 
 h2 {
   color: #40BBC3;
+  font-family: Tomato Grotesk;
+  font-weight: normal;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -73,6 +80,18 @@ p {
   margin: 0.4rem;
   margin-right: 0.5rem;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0px 0px 1em rgba(64, 187, 195, 0.15)
+}
+
+.customerPhoto {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: transparent no-repeat top;
+  background-size: cover;
+  behavior: url(PIE.htc);
 }
 </style>
