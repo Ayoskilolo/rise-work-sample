@@ -25,14 +25,12 @@ const reviews = [
         From The People Who Use Rise
       </h2>
       <p>
-        span.line
-        Our mission at Risevest is to empower more people just like you
-        to achieve your personal financial goals.
+        <span class="line-break-block">Our mission at Risevest is to empower more people just like you</span>
+        <span class="line-break-block"> to achieve your personal financial goals.</span>
       </p>
-
     </div>
 
-    <Vue3Marquee :pauseOnHover="true" :duration="60">
+    <Vue3Marquee :pauseOnHover="true" :duration="60" style="height: max-content; margin-bottom: 3rem;">
       <div id="reviewCard" v-for="review in reviews" :key="review">
         <p>
           {{ review.review }}
@@ -48,12 +46,24 @@ const reviews = [
 </template>
 
 <style scoped>
+section {
+  padding: 3rem 0;
+}
+
+h2 {
+  color: #40BBC3;
+}
+
 p {
+  font-size: 18px;
   margin: 0;
   padding: 0;
 }
 
-.info {}
+.info {
+  margin-bottom: 3rem;
+  text-align: center;
+}
 
 #reviewCard {
   border-radius: 10px;

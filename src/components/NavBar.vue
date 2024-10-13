@@ -19,6 +19,10 @@ import { Icon } from '@iconify/vue';
       <span>About Us</span>
       <span>FAQs</span>
     </div>
+
+    <div class="nav-mobile">
+      NAV
+    </div>
   </header>
 </template>
 
@@ -40,5 +44,24 @@ header {
 .nav {
   display: flex;
   gap: 2.5rem;
+}
+
+.nav-mobile {
+  display: hidden;
+}
+
+@media (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
 }
 </style>

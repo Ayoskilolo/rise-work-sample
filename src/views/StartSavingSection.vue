@@ -47,4 +47,10 @@ button {
   font-size: 1rem;
   align-self: flex-start;
 }
+
+@media (max-width: 1024px) {
+  section {
+    display: none;
+  }
+}
 </style>

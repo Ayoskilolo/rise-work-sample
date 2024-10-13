@@ -3,16 +3,13 @@ import CallToAction from '../components/CallToAction.vue';
 </script>
 
 <template>
-  <section>
-    <div>
+  <section id="invest" class="straighten">
+    <div class="card-text">
       <h3>Invest your money in dollars</h3>
       <p>
         <span class="line-break-block"> By holding your investments in a stable</span>
         <span class="line-break-block">currency, your money grows more over</span>
         <span class="line-break-block">time and retains its value better.</span>
-
-
-
       </p>
       <CallToAction message="Start Investing Now" />
     </div>
@@ -20,8 +17,8 @@ import CallToAction from '../components/CallToAction.vue';
     <img src="/service1.png" />
   </section>
 
-  <section class="reverse">
-    <div>
+  <section class="reverse  straighten" id="choose">
+    <div class="card-text">
       <h3>Choose what's best for you</h3>
       <p>
         <span class="line-break-block">Unlike other platforms, Rise lets you pick between</span>
@@ -35,8 +32,8 @@ import CallToAction from '../components/CallToAction.vue';
     <img src="/service2.png" />
   </section>
 
-  <section>
-    <div>
+  <section class="straighten">
+    <div class="card-text">
       <h3>Set goals and reach them</h3>
       <p>
         <span class="line-break-block">You can invest towards a goal on Rise--retirement, higher</span>
@@ -49,7 +46,7 @@ import CallToAction from '../components/CallToAction.vue';
     <img src="/service3.png" />
   </section>
 
-  <section class="reverse">
+  <section class="reverse hide">
     <div>
       <h3>We remember so you don't have to</h3>
       <p>
@@ -70,7 +67,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem;
+  padding-top: 3rem;
   margin: 0;
 }
 
@@ -86,5 +83,34 @@ h3 {
 
 img {
   transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  .straighten {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  img {
+    height: 250px;
+    box-shadow: inset 0px -3rem #A0DDE2CC;
+    margin-bottom: 5rem;
+  }
 }
 </style>

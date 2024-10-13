@@ -63,7 +63,7 @@ function createCallToActionMessage(assetClass: string) {
 section {
   height: max-content;
   margin: 0;
-  padding: 3rem;
+  padding: 3rem 8rem;
 }
 
 #assetClassesCards {
@@ -140,5 +140,20 @@ h3 {
 .callToAction {
   padding: 1rem;
   margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 0 5%;
+  }
+
+  #assetClassesCards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #assetClassesCard {
+    max-width: 100%;
+  }
 }
 </style>

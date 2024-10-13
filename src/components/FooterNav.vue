@@ -4,7 +4,7 @@
 <template>
   <footer>
     <nav>
-      <ul style="flex:grow;">
+      <ul>
         <li class="top">Rise</li>
         <li>About Us</li>
         <li>Career</li>
@@ -29,21 +29,28 @@
 
       <ul>
         <li class="top">Contact Us</li>
-        <li>0818 714 7405</li>
+        <li> <a href="tel:+2348187147405">0818 714 7405</a> </li>
         <li><a href="mailto:hello@rise.capital">hello@rise.capital</a></li>
         <li>Newsletter</li>
-        <li>Instagram</li>
-        <li>Twitter</li>
+        <li> <a href="">Instagram</a></li>
+        <li> <a href="">Twitter</a></li>
       </ul>
     </nav>
   </footer>
 </template>
 
 <style scoped>
+footer {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
 nav {
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  height: 35vh;
+  height: auto;
+  width: auto;
   border: 1px solid green;
 }
 
@@ -55,6 +62,7 @@ ul {
 
 .top {
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 li {

@@ -21,6 +21,7 @@ section {
   align-items: center;
   justify-content: center;
   height: 55vh;
+  padding: 0;
   background: radial-gradient(closest-side at top 20% right 10%, #d6c8f6, transparent), radial-gradient(closest-side at bottom 20% right 10%, #d0f8f8, transparent), radial-gradient(closest-side at top 20% left 10%, #f7d8cc, transparent), radial-gradient(closest-side at bottom 20% left 10%, #ffd4f1, transparent);
 }
 
