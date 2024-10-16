@@ -112,7 +112,7 @@ p {
 }
 
 img {
-  width: 200px;
+  width: 150px;
 }
 
 .appPreview {
