@@ -35,7 +35,7 @@ const reviews = [
 
     <Vue3Marquee :pauseOnHover="true" :duration="60" style="height: max-content; margin-bottom: 3rem;">
       <div id="reviewCard" v-for="review in reviews" :key="review">
-        <p>
+        <p class="reviewText">
           {{ review.review }}
         </p>
 
@@ -63,7 +63,6 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -86,6 +85,10 @@ p {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0px 0px 1em rgba(64, 187, 195, 0.15)
+}
+
+.reviewText {
+  font-size: 1rem;
 }
 
 .customerPhoto {

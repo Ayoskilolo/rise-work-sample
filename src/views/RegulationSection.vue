@@ -32,6 +32,7 @@ h2 {
 }
 
 p {
+  width: 50%;
   text-align: center;
   padding: 1rem;
 }
