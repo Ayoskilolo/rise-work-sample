@@ -19,14 +19,14 @@ import { Icon } from '@iconify/vue';
           <a class="button" href="https://click.risevest.com/gb0g/84fr8qjl?af_qr=c">
             <Icon icon="ic:baseline-apple" style="font-size: 45px;" />
             <span>
-              <span class="line-break-block">Download on the</span>
+              <span class="line-break-block download">Download on the</span>
               <span class="bold">App Store</span>
             </span>
           </a>
           <a class="button" href="https://click.risevest.com/gb0g/84fr8qjl?af_qr=c">
             <Icon icon="mage:playstore" style="font-size: 40px;" />
             <span>
-              <span class="line-break-block">Download on the</span>
+              <span class="line-break-block download">Download on the</span>
               <span class="bold line-break-block">Play Store</span>
             </span>
           </a>
@@ -133,6 +133,8 @@ img {
 }
 
 .button {
+  font-family: Tomato Grotesk;
+  font-weight: bolder;
   display: flex;
   height: 100%;
   border-radius: 10px;
@@ -178,6 +180,7 @@ span.button {
 
   .buttons {
     justify-content: center;
+    align-items: center;
   }
 
   #supportedBy {
@@ -188,6 +191,10 @@ span.button {
 
   img {
     width: 100px;
+  }
+
+  .download {
+    font-size: 0.7rem;
   }
 }
 
