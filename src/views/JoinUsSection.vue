@@ -98,6 +98,11 @@ span.button {
 }
 
 @media (max-width: 1024px) {
+
+  h2 {
+    line-height: 40px;
+  }
+
   section {
     height: auto;
     margin-bottom: 3rem;

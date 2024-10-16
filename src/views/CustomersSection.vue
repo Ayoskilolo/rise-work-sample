@@ -28,8 +28,8 @@ const reviews = [
         From The People Who Use Rise
       </h2>
       <p>
-        <span class="line-break-block">Our mission at Risevest is to empower more people just like you</span>
-        <span class="line-break-block"> to achieve your personal financial goals.</span>
+        <span class="line-break-block">Our mission at Risevest is to empower more people just like you
+          to achieve your personal financial goals.</span>
       </p>
     </div>
 
@@ -59,6 +59,7 @@ h2 {
   color: #40BBC3;
   font-family: Tomato Grotesk;
   font-weight: normal;
+  margin-bottom: 1rem;
 }
 
 p {
@@ -68,7 +69,8 @@ p {
 }
 
 .info {
-  margin-bottom: 3rem;
+  margin-bottom: rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -93,5 +95,13 @@ p {
   background: transparent no-repeat top;
   background-size: cover;
   behavior: url(PIE.htc);
+}
+
+@media (max-width: 1024px) {
+
+  h2 {
+    line-height: 40px;
+  }
+
 }
 </style>

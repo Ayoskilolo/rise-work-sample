@@ -11,15 +11,15 @@ import { Icon } from '@iconify/vue';
           <span id="bottomline"> that help you grow</span>
         </h2>
         <p>
-          <span id="quality">We put your money in high quality assets that help</span>
-          <span id="wealth">you build wealth and achieve your financial goals.</span>
+          <span id="quality">We put your money in high quality assets that help you build wealth and achieve your
+            financial goals.</span>
         </p>
 
         <div class="buttons">
           <a class="button" href="https://click.risevest.com/gb0g/84fr8qjl?af_qr=c">
             <Icon icon="ic:baseline-apple" style="font-size: 45px;" />
             <span>
-              <span class="line-break-block">Download on the </span>
+              <span class="line-break-block">Download on the</span>
               <span class="bold">App Store</span>
             </span>
           </a>
@@ -94,6 +94,11 @@ p {
   display: block;
 }
 
+#quality {
+  line-height: 20px;
+  text-align: center;
+}
+
 #supportedBy {
   display: none;
 }
@@ -165,10 +170,11 @@ span.button {
   }
 
   h2 {
-    font-size: 2.5rem;
-    line-height: 25px;
+    font-size: 2.2rem;
+    line-height: 20px;
     text-align: center;
   }
+
 
   .buttons {
     justify-content: center;

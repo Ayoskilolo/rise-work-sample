@@ -5,11 +5,12 @@
   <section>
     <h2>How we are Regulated</h2>
     <p>
-      <span class="line-break-block">Rise is registered and regulated both in the US and in Nigeria.</span>
-      <span class="line-break-block">Our team is made up of US registered investment advisers,</span>
-      <span class="line-break-block">our Nigerian users are covered by our SEC licensed trustees,</span>
-      <span class="line-break-block">ARM Trustees and all our assets are held with</span>
-      <span class="line-break-block">regulated third parties, in all relevant jurisdictions</span>
+      <span class="line-break-block">
+        Rise is registered and regulated both in the US and in Nigeria.
+        Our team is made up of US registered investment advisers,
+        our Nigerian users are covered by our SEC licensed trustees,
+        ARM Trustees and all our assets are held with=
+        regulated third parties, in all relevant jurisdictions</span>
     </p>
   </section>
 </template>
@@ -32,5 +33,6 @@ h2 {
 
 p {
   text-align: center;
+  padding: 1rem;
 }
 </style>

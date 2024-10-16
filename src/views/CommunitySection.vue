@@ -53,6 +53,10 @@ button {
 }
 
 @media (max-width: 1024px) {
+  h2 {
+    line-height: 40px;
+  }
+
   #community {
     flex-direction: column-reverse;
     text-align: center;
